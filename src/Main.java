@@ -41,5 +41,14 @@ public class Main {
         System.out.println("Password = " + password);
         System.out.println("Numero 1 = " + numero);
         System.out.println("Numero 2 = " + numero2);
+
+        ObjetoTeste2 objeto2 = new ObjetoTeste2();
+        ObjetoTeste1 objeto1 = new ObjetoTeste1();
+
+        objeto2.setValor2(5);
+        objeto1.setCopiaDoObjetoTeste2(objeto2);
+        System.out.println(objeto1.getCopiaDoObjetoTeste2().getValor2());
+        objeto2.setValor2(10);
+        System.out.println(objeto1.getCopiaDoObjetoTeste2().getValor2());
     }
 }
